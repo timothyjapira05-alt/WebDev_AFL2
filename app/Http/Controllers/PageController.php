@@ -31,9 +31,18 @@ class PageController extends Controller
     }
 
     public function home()
-{
-    return view('welcome', [
-        'title' => 'Naturae',
-    ]);
-}
+    {
+        return view('welcome', [
+            'title' => 'Naturae — Cold Press Juice',
+            'scrollToOrder' => false,
+        ]);
+    }
+
+    public function pesan()
+    {
+        return view('welcome', [
+            'title' => 'Pesan Naturae Cold Press',
+            'scrollToOrder' => true,
+        ]);
+    }
 }

@@ -5,6 +5,8 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\PageController;
 
 Route::get('/', [PageController::class, 'home']);
+Route::get('/pesan', [PageController::class, 'pesan']);
+Route::get('/order', [PageController::class, 'pesan']);
 Route::get('/about_us', [PageController::class, 'about']);
 Route::get('/Story', [PageController::class, 'story']);
 Route::get('/Blog', [PageController::class, 'Blog']);
