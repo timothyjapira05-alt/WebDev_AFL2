@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav ms-auto gap-2 align-items-center">
                 <a class="nav-link text-white" href="{{ url('/') }}">Beranda</a>
-                <a class="nav-link text-white" href="{{ url('/#produk') }}">Varian Produk</a>
+                <a class="nav-link text-white" href="{{ route('products') }}">Products</a>
                 <a class="nav-link text-warning fw-bold" href="{{ url('/#pesan') }}">🛒 Pesan Sekarang</a>
                 <a class="nav-link text-white-50" href="{{ url('/about_us') }}">About Us</a>
                 <a class="nav-link text-white-50" href="{{ url('/Story') }}">Our Story</a>

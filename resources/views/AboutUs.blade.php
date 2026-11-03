@@ -42,7 +42,7 @@
     </div>
 
     <div class="mt-10">
-      <a href="{{ url('/#produk') }}" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-naturae-darkgreen hover:bg-naturae-darkgreen-light text-white font-bold text-sm shadow-md transition-all">
+      <a href="{{ route('products') }}" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-naturae-darkgreen hover:bg-naturae-darkgreen-light text-white font-bold text-sm shadow-md transition-all">
         <span>Lihat Menu Varian Kami</span>
         <span>→</span>
       </a>

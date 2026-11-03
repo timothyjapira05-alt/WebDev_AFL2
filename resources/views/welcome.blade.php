@@ -32,9 +32,9 @@
 
           <!-- Action Buttons -->
           <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-10">
-            <a href="#produk" class="px-7 py-4 rounded-full bg-naturae-darkgreen hover:bg-naturae-darkgreen-light active:scale-95 text-white font-extrabold text-base tracking-wide shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2">
-              <span>Lihat Menu Varian</span>
-              <span>↓</span>
+            <a href="{{ route('products') }}" class="px-7 py-4 rounded-full bg-naturae-darkgreen hover:bg-naturae-darkgreen-light active:scale-95 text-white font-extrabold text-base tracking-wide shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2">
+              <span>Lihat Semua Produk</span>
+              <span>→</span>
             </a>
 
             <a href="https://wa.me/6287730720433?text=Halo%20Naturae%20Cold%20Press!%20Saya%20tertarik%20dengan%20produk%20juice%20segar%20Anda" target="_blank" rel="noopener noreferrer" class="px-6 py-4 rounded-full bg-white hover:bg-naturae-cream border-2 border-emerald-900/15 text-naturae-darkgreen font-bold text-base transition-all duration-200 shadow-sm flex items-center gap-2">
@@ -150,172 +150,25 @@
     </div>
   </section>
 
-  <!-- PRODUK SECTION (3 KARTU DARI POSTER - PURE MENU SHOWCASE) -->
-  <section id="produk" class="relative py-16 md:py-24 bg-[#F5EFE4]/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/5 text-naturae-darkgreen text-xs font-bold uppercase tracking-wider mb-3">
-          Koleksi Signature Cold Press
-        </span>
-        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-naturae-darkgreen uppercase tracking-tight mb-4">
-          3 Varian Rasa Segar Pilihan
-        </h2>
-        <p class="text-emerald-950/75 text-sm sm:text-base leading-relaxed">
-          Semua varian diproses dingin dari buah & sayur segar pilihan tanpa konsentrat dan tanpa gula pasir. Harga sama rata Rp 20.000 / botol 300 ml.
-        </p>
-      </div>
+  <!-- PRODUK SECTION dihapus dari Home – kini tersedia di halaman /products -->
 
-      <!-- 3 CARDS GRID (KATALOG MENU) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- CARD 1: TROPICAL SPLASH -->
-        <div class="bg-white rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 border border-emerald-950/5 shadow-card hover:shadow-card-hover flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 left-0 right-0 h-2 bg-naturae-red"></div>
-
-          <div>
-            <div class="flex items-start justify-between gap-4 mb-4">
-              <div class="w-12 h-12 rounded-full bg-naturae-red shadow-md flex items-center justify-center text-white text-lg">
-                🍉
-              </div>
-              <div class="text-right">
-                <div class="inline-block px-3 py-1 rounded-full bg-emerald-950/5 text-xs font-bold text-naturae-darkgreen mb-1">
-                  300 ml · Cold Pressed
-                </div>
-                <div class="font-display text-2xl text-naturae-darkgreen font-black">
-                  Rp 20.000
-                </div>
-              </div>
-            </div>
-
-            <!-- Title & Subtitle -->
-            <div class="text-center mt-2 mb-3">
-              <h3 class="font-display text-2xl sm:text-3xl uppercase tracking-tight text-naturae-red">
-                TROPICAL SPLASH
-              </h3>
-              <p class="text-xs sm:text-sm font-extrabold text-emerald-950/70 tracking-wider uppercase mt-1">
-                SEMANGKA · NANAS · LEMON
-              </p>
-            </div>
-
-            <p class="text-xs sm:text-sm text-emerald-950/80 leading-relaxed text-center mb-5 min-h-[56px]">
-              "Kesegaran maksimal untuk cuaca panas, membantu mengganti cairan tubuh, memulihkan otot lelah setelah beraktivitas, dan melancarkan pencernaan."
-            </p>
-
-            <!-- Nutrition Pills (from poster) -->
-            <div class="flex flex-wrap justify-center gap-1.5 mb-6">
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-red-50 text-red-700 border border-red-200">Vitamin C</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-red-50 text-red-700 border border-red-200">Vitamin A</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-red-50 text-red-700 border border-red-200">Antioksidan Likopen</span>
-            </div>
-          </div>
-
-          <!-- Direct Order Link via WhatsApp -->
-          <div>
-            <a href="https://wa.me/6287730720433?text=Halo%20Naturae!%20Saya%20ingin%20pesan%20varian%20Tropical%20Splash%20(300ml%20-%20Rp%2020.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-full text-xs sm:text-sm font-bold text-white bg-naturae-red hover:bg-red-700 active:scale-95 transition-all shadow-md flex items-center justify-center gap-2">
-              <span>Pesan via WhatsApp</span>
-              <span>💬</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- CARD 2: FRESH IMMUNITY -->
-        <div class="bg-white rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 border border-emerald-950/5 shadow-card hover:shadow-card-hover flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 left-0 right-0 h-2 bg-naturae-orange"></div>
-
-          <div>
-            <div class="flex items-start justify-between gap-4 mb-4">
-              <div class="w-12 h-12 rounded-full bg-naturae-orange shadow-md flex items-center justify-center text-white text-lg">
-                🥕
-              </div>
-              <div class="text-right">
-                <div class="inline-block px-3 py-1 rounded-full bg-emerald-950/5 text-xs font-bold text-naturae-darkgreen mb-1">
-                  300 ml · Cold Pressed
-                </div>
-                <div class="font-display text-2xl text-naturae-darkgreen font-black">
-                  Rp 20.000
-                </div>
-              </div>
-            </div>
-
-            <div class="text-center mt-2 mb-3">
-              <h3 class="font-display text-2xl sm:text-3xl uppercase tracking-tight text-naturae-orange">
-                FRESH IMMUNITY
-              </h3>
-              <p class="text-xs sm:text-sm font-extrabold text-emerald-950/70 tracking-wider uppercase mt-1">
-                NANAS · APEL · WORTEL
-              </p>
-            </div>
-
-            <p class="text-xs sm:text-sm text-emerald-950/80 leading-relaxed text-center mb-5 min-h-[56px]">
-              "Nutrisi manis alami untuk kulit bercahaya, mata sehat, dan perlindungan ekstra bagi sistem imun tubuh."
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-1.5 mb-6">
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-orange-50 text-orange-700 border border-orange-200">Vitamin A</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-orange-50 text-orange-700 border border-orange-200">Vitamin C</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-orange-50 text-orange-700 border border-orange-200">Vitamin K</span>
-            </div>
-          </div>
-
-          <div>
-            <a href="https://wa.me/6287730720433?text=Halo%20Naturae!%20Saya%20ingin%20pesan%20varian%20Fresh%20Immunity%20(300ml%20-%20Rp%2020.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-full text-xs sm:text-sm font-bold text-white bg-naturae-orange hover:bg-amber-600 active:scale-95 transition-all shadow-md flex items-center justify-center gap-2">
-              <span>Pesan via WhatsApp</span>
-              <span>💬</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- CARD 3: GREEN VITALITY -->
-        <div class="bg-white rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 border border-emerald-950/5 shadow-card hover:shadow-card-hover flex flex-col justify-between relative overflow-hidden">
-          <div class="absolute top-0 left-0 right-0 h-2 bg-naturae-green"></div>
-
-          <div>
-            <div class="flex items-start justify-between gap-4 mb-4">
-              <div class="w-12 h-12 rounded-full bg-naturae-green shadow-md flex items-center justify-center text-white text-lg">
-                🥬
-              </div>
-              <div class="text-right">
-                <div class="inline-block px-3 py-1 rounded-full bg-emerald-950/5 text-xs font-bold text-naturae-darkgreen mb-1">
-                  300 ml · Cold Pressed
-                </div>
-                <div class="font-display text-2xl text-naturae-darkgreen font-black">
-                  Rp 20.000
-                </div>
-              </div>
-            </div>
-
-            <div class="text-center mt-2 mb-3">
-              <h3 class="font-display text-2xl sm:text-3xl uppercase tracking-tight text-naturae-green">
-                GREEN VITALITY
-              </h3>
-              <p class="text-xs sm:text-sm font-extrabold text-emerald-950/70 tracking-wider uppercase mt-1">
-                NANAS · APEL · PAKCOY
-              </p>
-            </div>
-
-            <p class="text-xs sm:text-sm text-emerald-950/80 leading-relaxed text-center mb-5 min-h-[56px]">
-              "Cara segar menikmati sayur tanpa rasa langu. Membantu detoksifikasi racun dari dalam tubuh dan menjaga kepadatan tulang."
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-1.5 mb-6">
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Vitamin K</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Vitamin C</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Vitamin A</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Folat</span>
-            </div>
-          </div>
-
-          <div>
-            <a href="https://wa.me/6287730720433?text=Halo%20Naturae!%20Saya%20ingin%20pesan%20varian%20Green%20Vitality%20(300ml%20-%20Rp%2020.000)" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-full text-xs sm:text-sm font-bold text-white bg-naturae-green hover:bg-emerald-700 active:scale-95 transition-all shadow-md flex items-center justify-center gap-2">
-              <span>Pesan via WhatsApp</span>
-              <span>💬</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
+  <!-- CTA BANNER menuju halaman Products -->
+  <section class="py-12 bg-[#F5EFE4]/60">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="font-display text-2xl sm:text-3xl text-naturae-darkgreen uppercase tracking-tight mb-3">
+        Lihat Seluruh Produk Kami
+      </h2>
+      <p class="text-sm text-emerald-950/70 mb-6">
+        Temukan varian cold-pressed juice pilihan kami — Tropical Splash, Fresh Immunity, dan Green Vitality. <strong>All item Rp 20.000</strong> / botol 300 ml.
+      </p>
+      <a href="{{ route('products') }}"
+         class="inline-flex items-center gap-2 px-8 py-4 rounded-full
+                bg-naturae-darkgreen hover:bg-naturae-darkgreen-light
+                text-white font-extrabold text-base tracking-wide
+                shadow-lg hover:shadow-xl transition-all duration-200 active:scale-95">
+        <span>Lihat Semua Produk</span>
+        <span>→</span>
+      </a>
     </div>
   </section>
 

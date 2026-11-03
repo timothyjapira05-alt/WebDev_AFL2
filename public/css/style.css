@@ -1,0 +1,156 @@
+/* ==========================================================================
+   NATURAE COLD PRESS JUICE — OFFICIAL STYLESHEET
+   Location: public/css/style.css
+   ========================================================================== */
+
+/* 1. BRAND DESIGN TOKENS (HEX VALUES ACCURATE FROM POSTER) */
+:root {
+  --naturae-bg: #FAF6EE;
+  --naturae-cream: #F3EDE2;
+  --naturae-surface: #FFFFFF;
+  --naturae-darkgreen: #1E4324;
+  --naturae-darkgreen-dark: #15331B;
+  --naturae-darkgreen-light: #2A5C32;
+  --naturae-red: #D93829;
+  --naturae-red-light: #FFF1EF;
+  --naturae-orange: #ED7D18;
+  --naturae-orange-light: #FFF5EB;
+  --naturae-green: #2F7E2B;
+  --naturae-green-light: #F0F9EE;
+  --naturae-yellow: #F5A623;
+  --naturae-dark: #1C2818;
+  --naturae-muted: #637361;
+
+  --font-display: 'Titan One', 'Syne', sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* 2. BASE & RESET */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--naturae-bg);
+  color: var(--naturae-dark);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: var(--naturae-red);
+  color: #FFFFFF;
+}
+
+/* 3. TYPOGRAPHY CLASSES */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-body);
+}
+
+/* 4. BRAND COLOR UTILITIES */
+.bg-naturae-bg { background-color: var(--naturae-bg); }
+.bg-naturae-cream { background-color: var(--naturae-cream); }
+.bg-naturae-darkgreen { background-color: var(--naturae-darkgreen); }
+.bg-naturae-darkgreen-light { background-color: var(--naturae-darkgreen-light); }
+.bg-naturae-red { background-color: var(--naturae-red); }
+.bg-naturae-red-light { background-color: var(--naturae-red-light); }
+.bg-naturae-orange { background-color: var(--naturae-orange); }
+.bg-naturae-orange-light { background-color: var(--naturae-orange-light); }
+.bg-naturae-green { background-color: var(--naturae-green); }
+.bg-naturae-green-light { background-color: var(--naturae-green-light); }
+
+.text-naturae-darkgreen { color: var(--naturae-darkgreen); }
+.text-naturae-red { color: var(--naturae-red); }
+.text-naturae-orange { color: var(--naturae-orange); }
+.text-naturae-green { color: var(--naturae-green); }
+
+.border-naturae-darkgreen { border-color: var(--naturae-darkgreen); }
+.border-naturae-red { border-color: var(--naturae-red); }
+.border-naturae-orange { border-color: var(--naturae-orange); }
+.border-naturae-green { border-color: var(--naturae-green); }
+
+/* 5. CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--naturae-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D3C2;
+  border-radius: 9999px;
+  border: 2px solid var(--naturae-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--naturae-darkgreen);
+}
+
+/* 6. ELEVATION & SHADOWS */
+.shadow-soft {
+  box-shadow: 0 10px 30px -5px rgba(30, 67, 36, 0.08);
+}
+.shadow-card {
+  box-shadow: 0 20px 40px -15px rgba(30, 67, 36, 0.1);
+}
+.shadow-card-hover {
+  box-shadow: 0 30px 60px -15px rgba(30, 67, 36, 0.18);
+}
+
+/* 7. KEYFRAME ANIMATIONS */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1.5deg);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-1.5deg);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+/* 8. ACCESSIBILITY — REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

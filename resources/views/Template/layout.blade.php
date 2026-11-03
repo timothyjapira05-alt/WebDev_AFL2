@@ -71,34 +71,15 @@
     }
   </script>
 
-  <style>
-    body {
-      background-color: #FAF6EE;
-      color: #1C2818;
-      overflow-x: hidden;
-    }
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #FAF6EE;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #C4D3C2;
-      border-radius: 9999px;
-      border: 2px solid #FAF6EE;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #1E4324;
-    }
-  </style>
+  <!-- External CSS from public/css/style.css -->
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body class="font-sans antialiased selection:bg-naturae-red selection:text-white min-h-screen flex flex-col justify-between">
 
   <!-- ================= MASTER NAVBAR ================= -->
   <header class="sticky top-0 z-50 bg-[#FAF6EE]/95 backdrop-blur-md border-b border-emerald-950/5 py-3.5 shadow-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between">
+      <div class="relative flex items-center justify-between">
         
         <!-- Logo & Brand -->
         <a href="{{ url('/') }}" class="flex items-center gap-3 group">
@@ -117,15 +98,9 @@
         </a>
 
         <!-- Desktop Navigation Links (Consistent on ALL pages) -->
-        <nav class="hidden lg:flex items-center gap-6" aria-label="Menu Navigasi">
-          <a href="{{ url('/') }}" class="text-sm font-semibold {{ Request::is('/') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
-            Beranda
-          </a>
-          <a href="{{ url('/#produk') }}" class="text-sm font-semibold text-emerald-950/80 hover:text-naturae-red transition-colors">
-            Menu Varian
-          </a>
-          <a href="{{ url('/#manfaat') }}" class="text-sm font-semibold text-emerald-950/80 hover:text-naturae-red transition-colors">
-            Kenapa Cold Press?
+        <nav class="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-6" aria-label="Menu Navigasi">
+          <a href="{{ route('products') }}" class="text-sm font-semibold {{ Request::is('products') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
+            Products
           </a>
           <a href="{{ url('/about_us') }}" class="text-sm font-semibold {{ Request::is('about_us') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
             About Us
@@ -141,16 +116,8 @@
           </a>
         </nav>
 
-        <!-- CTA WhatsApp Button -->
+        <!-- Mobile Toggle -->
         <div class="flex items-center gap-3">
-          <a href="https://wa.me/6287730720433?text=Halo%20Naturae%20Cold%20Press!%20Saya%20ingin%20tanya%20varian%20juice%20segar%20%F0%9F%A5%A4" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-naturae-darkgreen hover:bg-naturae-darkgreen-light text-white text-xs md:text-sm font-bold tracking-wide shadow-md active:scale-95 transition-all">
-            <svg class="w-4 h-4 text-emerald-300" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.838.879 2.796.879 3.182 0 5.768-2.587 5.768-5.766.001-3.182-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.745 0-3.376-.462-4.797-1.264l-5.234 1.359 1.401-5.111c-.914-1.49-1.401-3.21-1.401-4.953 0-5.485 4.484-9.969 9.969-9.969 5.485 0 9.969 4.484 9.969 9.969z" />
-            </svg>
-            <span>WhatsApp Admin</span>
-          </a>
-
-          <!-- Mobile Toggle -->
           <button onclick="toggleMobileNav()" class="lg:hidden p-2 rounded-lg text-emerald-950 hover:bg-emerald-950/5">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -163,15 +130,11 @@
       <!-- Mobile Menu Dropdown -->
       <div id="mobile-nav-menu" class="hidden lg:hidden pt-4 pb-2 border-t border-emerald-950/10 mt-3 space-y-2">
         <a href="{{ url('/') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Beranda</a>
-        <a href="{{ url('/#produk') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Menu Varian</a>
-        <a href="{{ url('/#manfaat') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Kenapa Cold Press?</a>
+        <a href="{{ route('products') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Products</a>
         <a href="{{ url('/about_us') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">About Us</a>
         <a href="{{ url('/Story') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Our Story</a>
         <a href="{{ url('/Blog') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Blog</a>
         <a href="{{ url('/GetInTouch') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Get In Touch</a>
-        <a href="https://wa.me/6287730720433" target="_blank" class="block text-center mt-2 px-4 py-2.5 rounded-full bg-naturae-darkgreen text-white font-bold text-sm shadow">
-          Chat WhatsApp (+62 877-3072-0433)
-        </a>
       </div>
     </div>
   </header>
@@ -256,16 +219,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- FLOATING WA BUTTON -->
-  <div class="fixed bottom-6 right-6 z-40">
-    <a href="https://wa.me/6287730720433?text=Halo%20Naturae!%20Saya%20ingin%20tanya%20/%20pesan%20cold-press%20juice%20%F0%9F%A5%A4" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp" class="relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20BD5A] text-white shadow-xl flex items-center justify-center transition-transform duration-300 hover:scale-110 active:scale-95">
-      <span class="absolute inset-0 rounded-full bg-[#25D366] opacity-75 animate-ping -z-10"></span>
-      <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.838.879 2.796.879 3.182 0 5.768-2.587 5.768-5.766.001-3.182-2.585-5.766-5.768-5.766zm9.969 5.766c0 5.485-4.484 9.969-9.969 9.969-1.745 0-3.376-.462-4.797-1.264l-5.234 1.359 1.401-5.111c-.914-1.49-1.401-3.21-1.401-4.953 0-5.485 4.484-9.969 9.969-9.969 5.485 0 9.969 4.484 9.969 9.969z" />
-      </svg>
-    </a>
-  </div>
 
   <script>
     function toggleMobileNav() {

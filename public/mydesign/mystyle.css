@@ -1,19 +1,6 @@
-/* Naturae Cold Press Brand Theme Styles */
-:root {
-  --naturae-bg: #FAF6EE;
-  --naturae-darkgreen: #1E4324;
-  --naturae-red: #D93829;
-  --naturae-orange: #ED7D18;
-  --naturae-green: #2F7E2B;
-}
+/* ==========================================================================
+   NATURAE COLD PRESS JUICE — MYDESIGN / MYSTYLE.CSS
+   Brand Colors, Typography, Animations, and Components
+   ========================================================================== */
 
-body {
-  background-color: var(--naturae-bg);
-  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  color: #1C2818;
-}
-
-.font-display {
-  font-family: 'Titan One', 'Syne', sans-serif;
-}
-
+@import url('../css/style.css');
