@@ -20,25 +20,23 @@
           Freshly Pressed, Simply Enjoyed. 100% cold-pressed juice buah & sayur murni tanpa pemanasan, tanpa air tambahan, dan tanpa pengawet.
         </p> 
       </div>
-
+      
       <div class="md:col-span-3 space-y-3">
         <h4 class="font-display text-sm uppercase tracking-wider text-emerald-200 font-bold">Navigasi Halaman</h4>
         <ul class="space-y-2 text-xs sm:text-sm text-emerald-200/70">
           <li><a href="{{ url('/') }}" class="hover:text-white transition-colors">Beranda</a></li>
-          <li><a href="{{ url('/#produk') }}" class="hover:text-white transition-colors">Menu Varian</a></li>
-          <li><a href="{{ url('/#manfaat') }}" class="hover:text-white transition-colors">Kenapa Cold Press?</a></li>
-          <li><a href="{{ url('/about_us') }}" class="hover:text-white transition-colors">About Us</a></li>
-          <li><a href="{{ url('/Story') }}" class="hover:text-white transition-colors">Our Story</a></li>
+          <li><a href="{{ url('products') }}" class="hover:text-white transition-colors">Products</a></li>
           <li><a href="{{ url('/Blog') }}" class="hover:text-white transition-colors">Blog</a></li>
+          <li><a href="{{ url('/Story') }}" class="hover:text-white transition-colors">Our Story</a></li>
+          <li><a href="{{ url('/about_us') }}" class="hover:text-white transition-colors">About Us</a></li>
           <li><a href="{{ url('/GetInTouch') }}" class="hover:text-white transition-colors">Get In Touch</a></li>
         </ul>
       </div>
 
-      <div class="md:col-span-4 space-y-4">
-        <h4 class="font-display text-sm uppercase tracking-wider text-emerald-200 font-bold">Kontak Resmi (Dari Poster)</h4>
+      <div class="md:col-span-3 space-y-3">
+        <h4 class="font-display text-sm uppercase tracking-wider text-emerald-200 font-bold">Kontak Resmi</h4>
         <div class="space-y-3">
           <a href="https://wa.me/6287730720433" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-2xl bg-emerald-900/40 hover:bg-emerald-900/70 border border-emerald-800/40 transition-colors">
-            <span class="text-xl">📞</span>
             <div>
               <span class="text-[10px] text-emerald-300/80 block uppercase tracking-wider font-semibold">WhatsApp Order</span>
               <span class="text-sm font-bold text-white tracking-wide">+62 877-3072-0433</span>
@@ -46,7 +44,6 @@
           </a>
 
             <a href="https://instagram.com/naturae_coldpress" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-2xl bg-emerald-900/40 hover:bg-emerald-900/70 border border-emerald-800/40 transition-colors">
-            <span class="text-xl">📷</span>
             <div>
               <span class="text-[10px] text-emerald-300/80 block uppercase tracking-wider font-semibold">Instagram Official</span>
               <span class="text-sm font-bold text-white tracking-wide">@naturae_coldpress</span>

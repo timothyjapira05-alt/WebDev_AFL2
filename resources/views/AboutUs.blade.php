@@ -3,10 +3,6 @@
 @section('content')
 <div class="py-16 md:py-24 bg-naturae-bg">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    
-    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/5 text-naturae-darkgreen text-xs font-bold uppercase tracking-wider mb-4">
-      Tentang Kami
-    </span>
 
     <h1 class="font-header text-4xl sm:text-5xl text-naturae-darkgreen uppercase tracking-tight mb-4">
       Cerita di Balik Naturae
@@ -22,7 +18,7 @@
       </p>
 
       <p>
-        Setiap botol jus Naturae diekstrak dengan metode <em>cold-pressed</em> hidrolik perlahan tanpa pisau berputar cepat. Proses ini menjaga enzim alami, vitamin, mineral, serta warna cerah buah tanpa rusak oleh panas gesekan.
+        Setiap botol jus Naturae diekstrak dengan metode <em>cold pressed</em> hidrolik perlahan tanpa pisau berputar cepat. Proses ini menjaga enzim alami, vitamin, mineral, serta warna cerah buah tanpa rusak oleh panas gesekan.
       </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-gray-100">
@@ -43,7 +39,7 @@
 
     <div class="mt-10">
       <a href="{{ route('products') }}" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-naturae-darkgreen hover:bg-naturae-darkgreen-light text-white font-bold text-sm shadow-md transition-all">
-        <span>Lihat Menu Varian Kami</span>
+        <span>Jelajahi Menu Produk</span>
         <span>→</span>
       </a>
     </div>

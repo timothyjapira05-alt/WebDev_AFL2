@@ -7,7 +7,7 @@
         <img src="{{ asset('assets/naturae-logo.webp') }}?v={{ file_exists(public_path('assets/naturae-logo.webp')) ? filemtime(public_path('assets/naturae-logo.webp')) : time() }}" alt="Naturae Logo" class="w-10 h-10 object-contain shadow-xs group-hover:scale-105 transition-transform select-none">
         <div class="flex flex-col">
           <span class="font-header text-2xl tracking-normal text-naturae-darkgreen group-hover:text-naturae-red transition-colors leading-none">
-            naturae
+            Naturae  
           </span>
           <span class="text-[10px] tracking-widest text-emerald-800 uppercase font-bold mt-1">
             Cold Press Juice

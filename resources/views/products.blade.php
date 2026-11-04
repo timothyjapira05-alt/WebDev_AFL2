@@ -1,19 +1,12 @@
-{{-- resources/views/products.blade.php --}}
 @extends('Template.layout')
 
 @php $title = 'Produk Naturae – Cold Press Juice'; @endphp
 
 @section('content')
 
-{{-- ===== PAGE HEADER ===== --}}
-<section class="bg-naturae-bg pt-12 pb-8">
+{{-- Header --}}
+<section class="bg-[#F5EFE4]/60 pt-12 pb-8">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-
-    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/5
-                border border-emerald-900/10 text-naturae-darkgreen text-xs font-bold
-                uppercase tracking-wider mb-4">
-      ✨ 100% Raw Cold-Pressed
-    </span>
 
     <h1 class="font-header text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight
               text-naturae-darkgreen leading-tight mb-3">
@@ -28,12 +21,12 @@
   </div>
 </section>
 
-{{-- ===== PRODUCT GRID ===== --}}
+{{-- Product Grid --}}
 <section class="bg-[#F5EFE4]/60 py-14">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     @if($products->isEmpty())
-      {{-- Empty state --}}
+      {{-- Ketika Kosong --}}
       <div class="flex flex-col items-center justify-center py-24 text-center">
         <div class="text-6xl mb-4">🥤</div>
         <h2 class="font-subheader text-2xl text-naturae-darkgreen mb-2">Produk Belum Tersedia</h2>
@@ -67,7 +60,7 @@
     @endif
 </div>
 
-          {{-- Product info --}}
+          {{-- Info Product --}}
           <div class="p-6 flex flex-col flex-1">
 
             <h2 class="font-subheader text-xl sm:text-2xl text-naturae-darkgreen mb-1 tracking-tight">
@@ -92,7 +85,7 @@
                 <span class="text-[10px] text-emerald-500 font-semibold">/ 300 ml · Cold Pressed</span>
               </div>
 
-              <a href="https://wa.me/6287730720433?text={{ urlencode('Halo Naturae! Saya ingin pesan ' . $product->name . ' (Rp ' . number_format($product->price, 0, ',', '.') . '). Mohon informasi ketersediaan dan cara pengirimannya 🙏') }}"
+              <a href="https://wa.me/6287730720433?text={{ urlencode('Halo Naturae! Saya ingin pesan ' . $product->name . ' (Rp ' . number_format($product->price, 0, ',', '.') . '). Mohon informasi ketersediaan dan cara pengirimannya') }}"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full
@@ -114,16 +107,5 @@
 
   </div>
 </section>
-
-{{-- ===== CTA BACK TO HOME ===== --}}
-<section class="bg-naturae-bg py-12 text-center">
-  <a href="{{ url('/') }}"
-    class="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2
-            border-naturae-darkgreen text-naturae-darkgreen font-bold text-sm
-            hover:bg-naturae-darkgreen hover:text-white transition-all duration-200">
-    ← Kembali ke Beranda
-  </a>
-</section>
-
 @endsection
 

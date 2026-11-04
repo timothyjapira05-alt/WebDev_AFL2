@@ -10,12 +10,11 @@
   <meta name="description" content="100% cold-pressed juice murni dari buah & sayur segar pilihan. Tanpa tambahan air, gula, atau pengawet. All item 20K.">
   <meta name="theme-color" content="#1E4324">
 
-  <!-- Google Fonts: Urbanist (weights 400-900) -->
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -75,20 +74,16 @@
     }
   </script>
 
-  <!-- External CSS from public/css/style.css with Cache-Buster -->
   <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ file_exists(public_path('css/style.css')) ? filemtime(public_path('css/style.css')) : time() }}">
 </head>
 <body class="font-sans antialiased selection:bg-naturae-red selection:text-white min-h-screen flex flex-col justify-between">
 
-  <!-- ================= MASTER NAVBAR ================= -->
   @include('partials.navbar.navbar')
 
-  <!-- ================= MAIN CONTENT ================= -->
   <main class="flex-1">
     @yield('content')
   </main>
 
-  <!-- ================= MASTER FOOTER ================= -->
   @include('partials.footer.footer')
 
   <script>

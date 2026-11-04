@@ -3,10 +3,6 @@
 @section('content')
 <div class="py-16 md:py-24 bg-naturae-bg">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    
-    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-100 text-naturae-red text-xs font-bold uppercase tracking-wider mb-4">
-      Perjalanan Kami
-    </span>
 
     <h1 class="font-header text-4xl sm:text-5xl text-naturae-darkgreen uppercase tracking-tight mb-8">
       Our Story
