@@ -16,8 +16,7 @@ return new class extends Migration {
             $table->text('description');
             $table->text('ingredients');
             $table->unsignedInteger('price');
-            // binary() = BLOB di SQLite, cocok menyimpan gambar
-            $table->binary('image')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

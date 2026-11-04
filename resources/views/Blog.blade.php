@@ -25,19 +25,19 @@
         <div class="bg-white rounded-3xl overflow-hidden border border-emerald-950/5 shadow-card hover:shadow-card-hover transition-all flex flex-col">
 
             {{-- Article Image --}}
-            @if ($post->image)
-                <img
-                    src="{{ $post->image_base64 }}"
-                    alt="{{ $post->title }}"
-                    class="w-full h-56 object-cover"
-                >
-            @else
-                <div class="w-full h-56 bg-emerald-50 flex items-center justify-center">
-                    <span class="text-emerald-800 text-sm">
-                        Image Not Available
-                    </span>
-                </div>
-            @endif
+@if ($post->image)
+    <img
+        src="{{ asset($post->image) }}"
+        alt="{{ $post->title }}"
+        class="w-full h-56 object-cover"
+    >
+@else
+    <div class="w-full h-56 bg-emerald-50 flex items-center justify-center">
+        <span class="text-emerald-800 text-sm">
+            Image Not Available
+        </span>
+    </div>
+@endif
 
             <div class="p-6 sm:p-7 flex flex-col flex-1">
 

@@ -17,8 +17,7 @@ return new class extends Migration
     $table->string('category');
     $table->text('description');
     $table->longText('content')->nullable();
-    $table->binary('image')->nullable();
-    $table->string('image_mime_type', 50)->nullable();
+    $table->string('image')->nullable();
 
     $table->timestamps();
 });
