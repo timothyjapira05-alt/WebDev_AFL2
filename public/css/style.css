@@ -3,26 +3,55 @@
    Location: public/css/style.css
    ========================================================================== */
 
-/* 1. BRAND DESIGN TOKENS (HEX VALUES ACCURATE FROM POSTER) */
+/* 0. CUSTOM LOCAL FONT FACES */
+@font-face {
+  font-family: 'Zero Cool';
+  src: url('../fonts/ZeroCool.ttf') format('truetype'),
+       url('/fonts/ZeroCool.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Keep on Truckin';
+  src: url('../fonts/KeepOnTruckin.ttf') format('truetype'),
+       url('/fonts/KeepOnTruckin.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../fonts/Urbanist-Bold.ttf') format('truetype'),
+       url('/fonts/Urbanist-Bold.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 1. BRAND DESIGN TOKENS (HEX VALUES ACCURATE FROM BRAND PALETTE) */
 :root {
   --naturae-bg: #FAF6EE;
   --naturae-cream: #F3EDE2;
   --naturae-surface: #FFFFFF;
-  --naturae-darkgreen: #1E4324;
-  --naturae-darkgreen-dark: #15331B;
-  --naturae-darkgreen-light: #2A5C32;
-  --naturae-red: #D93829;
+  --naturae-darkgreen: #18552C;
+  --naturae-darkgreen-dark: #123F21;
+  --naturae-darkgreen-light: #236E3B;
+  --naturae-red: #D62827;
   --naturae-red-light: #FFF1EF;
-  --naturae-orange: #ED7D18;
+  --naturae-orange: #F26122;
   --naturae-orange-light: #FFF5EB;
-  --naturae-green: #2F7E2B;
+  --naturae-green: #9ABD3B;
   --naturae-green-light: #F0F9EE;
-  --naturae-yellow: #F5A623;
-  --naturae-dark: #1C2818;
+  --naturae-yellow: #FFCA26;
+  --naturae-dark: #18552C;
   --naturae-muted: #637361;
 
-  --font-display: 'Titan One', 'Syne', sans-serif;
-  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-header: 'Keep on Truckin', cursive, sans-serif;
+  --font-subheader: 'Zero Cool', cursive, sans-serif;
+  --font-body: 'Urbanist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* 2. BASE & RESET */
@@ -35,6 +64,7 @@ body {
   background-color: var(--naturae-bg);
   color: var(--naturae-dark);
   font-family: var(--font-body);
+  font-weight: 700; /* Teks sisanya menggunakan font Urbanist Bold */
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -45,13 +75,29 @@ body {
   color: #FFFFFF;
 }
 
-/* 3. TYPOGRAPHY CLASSES */
-.font-display {
-  font-family: var(--font-display);
+/* 3. TYPOGRAPHY CLASSES & HIERARCHY */
+/* Header: Keep on Truckin Regular */
+h1, h2, .font-header, .font-display {
+  font-family: var(--font-header) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.02em;
 }
 
-.font-sans {
-  font-family: var(--font-body);
+/* Sub Header: Zero Cool Regular */
+h3, h4, h5, h6, .font-subheader, .font-subheading {
+  font-family: var(--font-subheader) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em;
+}
+
+/* Teks sisanya: Urbanist Bold */
+.font-sans, .font-body {
+  font-family: var(--font-body) !important;
+  font-weight: 700 !important;
+}
+
+p, span, a, button, input, select, textarea, li, label {
+  font-family: inherit;
 }
 
 /* 4. BRAND COLOR UTILITIES */

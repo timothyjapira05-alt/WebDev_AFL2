@@ -8,7 +8,7 @@
       Kontak Resmi
     </span>
 
-    <h1 class="font-display text-4xl sm:text-5xl text-naturae-darkgreen uppercase tracking-tight mb-4">
+    <h1 class="font-header text-4xl sm:text-5xl text-naturae-darkgreen uppercase tracking-tight mb-4">
       Hubungi Naturae
     </h1>
 
@@ -24,7 +24,7 @@
           📞
         </div>
         <span class="text-xs font-bold text-gray-500 uppercase tracking-wider block mb-1">WhatsApp Admin Order</span>
-        <h3 class="font-display text-xl sm:text-2xl text-naturae-darkgreen mb-2">+62 877-3072-0433</h3>
+        <h3 class="font-subheader text-xl sm:text-2xl text-naturae-darkgreen mb-2">+62 877-3072-0433</h3>
         <p class="text-xs text-gray-600 leading-relaxed mb-4">Chat langsung dengan admin kami untuk info stok hari ini dan konfirmasi pengantaran.</p>
         <span class="text-xs font-bold text-naturae-darkgreen group-hover:underline flex items-center gap-1">
           <span>Buka WhatsApp Sekarang</span>
@@ -38,7 +38,7 @@
           📷
         </div>
         <span class="text-xs font-bold text-gray-500 uppercase tracking-wider block mb-1">Instagram Official</span>
-        <h3 class="font-display text-xl sm:text-2xl text-pink-700 mb-2">@naturae_coldpress</h3>
+        <h3 class="font-subheader text-xl sm:text-2xl text-pink-700 mb-2">@naturae_coldpress</h3>
         <p class="text-xs text-gray-600 leading-relaxed mb-4">Follow cerita kesegaran harian, foto produk, dan promo menarik di akun Instagram resmi kami.</p>
         <span class="text-xs font-bold text-pink-700 group-hover:underline flex items-center gap-1">
           <span>Kunjungi Profil Instagram</span>
@@ -50,7 +50,7 @@
 
     <!-- Operating Info Box -->
     <div class="mt-8 p-6 rounded-3xl bg-white border border-emerald-950/5 shadow-soft text-left sm:text-center max-w-xl mx-auto">
-      <h4 class="font-display text-base text-naturae-darkgreen mb-2">📍 Area Layanan & Jam Operasional</h4>
+      <h4 class="font-subheader text-base text-naturae-darkgreen mb-2">📍 Area Layanan & Jam Operasional</h4>
       <p class="text-xs text-emerald-950/70 leading-relaxed">
         Pengiriman melayani area <strong>Surabaya, Sidoarjo & sekitarnya</strong>.<br>
         Jam operasional: <strong>Senin – Sabtu, 08.00 – 17.00 WIB</strong>.

@@ -8,12 +8,12 @@
       Perjalanan Kami
     </span>
 
-    <h1 class="font-display text-4xl sm:text-5xl text-naturae-darkgreen uppercase tracking-tight mb-8">
+    <h1 class="font-header text-4xl sm:text-5xl text-naturae-darkgreen uppercase tracking-tight mb-8">
       Our Story
     </h1>
 
     <div class="bg-white rounded-3xl p-8 sm:p-10 border border-emerald-950/5 shadow-card text-left space-y-6 text-emerald-950/80 leading-relaxed text-sm sm:text-base">
-      <h3 class="font-display text-xl text-naturae-darkgreen">
+      <h3 class="font-subheader text-xl text-naturae-darkgreen">
         Dari Dapur Kecil Menuju Komunitas Hidup Sehat
       </h3>
 

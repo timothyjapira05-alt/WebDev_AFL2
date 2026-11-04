@@ -15,7 +15,7 @@
       ✨ 100% Raw Cold-Pressed
     </span>
 
-    <h1 class="font-display text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight
+    <h1 class="font-header text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight
               text-naturae-darkgreen leading-tight mb-3">
       Katalog Produk
     </h1>
@@ -36,7 +36,7 @@
       {{-- Empty state --}}
       <div class="flex flex-col items-center justify-center py-24 text-center">
         <div class="text-6xl mb-4">🥤</div>
-        <h2 class="font-display text-2xl text-naturae-darkgreen mb-2">Produk Belum Tersedia</h2>
+        <h2 class="font-subheader text-2xl text-naturae-darkgreen mb-2">Produk Belum Tersedia</h2>
         <p class="text-emerald-700 text-sm max-w-sm">
           Data produk belum diisi. Silakan tambahkan produk melalui phpMyAdmin / database.
         </p>
@@ -70,7 +70,7 @@
           {{-- Product info --}}
           <div class="p-6 flex flex-col flex-1">
 
-            <h2 class="font-display text-xl sm:text-2xl uppercase text-naturae-darkgreen mb-1 tracking-tight">
+            <h2 class="font-subheader text-xl sm:text-2xl text-naturae-darkgreen mb-1 tracking-tight">
               {{ $product->name }}
             </h2>
 

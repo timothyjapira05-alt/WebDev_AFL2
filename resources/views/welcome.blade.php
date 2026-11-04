@@ -12,17 +12,14 @@
         
         <!-- Left: Poster Typography -->
         <div class="flex-1 text-center lg:text-left z-20 max-w-2xl">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/5 border border-emerald-900/10 text-naturae-darkgreen text-xs font-bold uppercase tracking-wider mb-5">
-            <span>✨ 100% Raw Cold-Pressed Juice</span>
-          </div>
 
-          <h1 class="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-naturae-darkgreen leading-[0.95] uppercase mb-4 drop-shadow-sm select-none">
+          <h1 class="font-header text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-naturae-darkgreen leading-[0.95] uppercase mb-4 drop-shadow-sm select-none">
             COLD<br>
             PRESS<br>
             JUICE
           </h1>
 
-          <p class="font-display text-2xl sm:text-3xl text-naturae-darkgreen/90 tracking-tight mb-4">
+          <p class="font-subheader text-2xl sm:text-3xl text-naturae-darkgreen/90 tracking-normal mb-4">
             Freshly Pressed, Simply Enjoyed.
           </p>
 
@@ -84,9 +81,7 @@
                 <div class="w-[85px] sm:w-[105px] md:w-[115px] flex-1 rounded-[24px] bg-gradient-to-b from-[#FF5E48] via-[#E63926] to-[#C92817] shadow-2xl flex flex-col justify-between p-2 border border-white/30 relative overflow-hidden">
                   <div class="absolute top-0 left-2 bottom-0 w-2 bg-white/30 rounded-full blur-[1px]"></div>
                   <div class="my-auto w-full bg-white/95 rounded-lg py-2.5 px-1.5 text-center shadow border border-amber-100 flex flex-col items-center">
-                    <div class="w-7 h-7 rounded-full bg-naturae-red text-white flex flex-col items-center justify-center text-[7.5px] font-display mb-1">
-                      <span>natu</span><span class="-mt-0.5">rae</span>
-                    </div>
+                    <img src="{{ asset('assets/naturae-logo.webp') }}" alt="Naturae Logo" class="w-7 h-7 object-contain mb-1">
                     <p class="text-[6.5px] font-semibold text-emerald-900 italic">Freshly Pressed Simply Enjoyed</p>
                     <p class="text-[6px] font-bold text-gray-500 uppercase tracking-wider mb-1">WATERMELON · PINEAPPLE · LEMON</p>
                     <div class="w-full py-0.5 px-1 rounded-full bg-naturae-red text-white text-[7.5px] font-display uppercase">
@@ -106,9 +101,7 @@
                 <div class="w-[85px] sm:w-[105px] md:w-[115px] flex-1 rounded-[24px] bg-gradient-to-b from-[#FFA733] via-[#F58220] to-[#DF6E10] shadow-2xl flex flex-col justify-between p-2 border border-white/30 relative overflow-hidden">
                   <div class="absolute top-0 left-2 bottom-0 w-2 bg-white/30 rounded-full blur-[1px]"></div>
                   <div class="my-auto w-full bg-white/95 rounded-lg py-2.5 px-1.5 text-center shadow border border-amber-100 flex flex-col items-center">
-                    <div class="w-7 h-7 rounded-full bg-naturae-red text-white flex flex-col items-center justify-center text-[7.5px] font-display mb-1">
-                      <span>natu</span><span class="-mt-0.5">rae</span>
-                    </div>
+                    <img src="{{ asset('assets/naturae-logo.webp') }}" alt="Naturae Logo" class="w-7 h-7 object-contain mb-1">
                     <p class="text-[6.5px] font-semibold text-emerald-900 italic">Freshly Pressed Simply Enjoyed</p>
                     <p class="text-[6px] font-bold text-gray-500 uppercase tracking-wider mb-1">PINEAPPLE · APPLE · CARROT</p>
                     <div class="w-full py-0.5 px-1 rounded-full bg-naturae-orange text-white text-[7.5px] font-display uppercase">
@@ -128,9 +121,7 @@
                 <div class="w-[85px] sm:w-[105px] md:w-[115px] flex-1 rounded-[24px] bg-gradient-to-b from-[#54BA46] via-[#35872A] to-[#25681D] shadow-2xl flex flex-col justify-between p-2 border border-white/30 relative overflow-hidden">
                   <div class="absolute top-0 left-2 bottom-0 w-2 bg-white/30 rounded-full blur-[1px]"></div>
                   <div class="my-auto w-full bg-white/95 rounded-lg py-2.5 px-1.5 text-center shadow border border-amber-100 flex flex-col items-center">
-                    <div class="w-7 h-7 rounded-full bg-naturae-red text-white flex flex-col items-center justify-center text-[7.5px] font-display mb-1">
-                      <span>natu</span><span class="-mt-0.5">rae</span>
-                    </div>
+                    <img src="{{ asset('assets/naturae-logo.webp') }}" alt="Naturae Logo" class="w-7 h-7 object-contain mb-1">
                     <p class="text-[6.5px] font-semibold text-emerald-900 italic">Freshly Pressed Simply Enjoyed</p>
                     <p class="text-[6px] font-bold text-gray-500 uppercase tracking-wider mb-1">PINEAPPLE · APPLE · PAKCOY</p>
                     <div class="w-full py-0.5 px-1 rounded-full bg-naturae-green text-white text-[7.5px] font-display uppercase">
@@ -155,7 +146,7 @@
   <!-- CTA BANNER menuju halaman Products -->
   <section class="py-12 bg-[#F5EFE4]/60">
     <div class="max-w-3xl mx-auto px-4 text-center">
-      <h2 class="font-display text-2xl sm:text-3xl text-naturae-darkgreen uppercase tracking-tight mb-3">
+      <h2 class="font-header text-2xl sm:text-3xl text-naturae-darkgreen uppercase tracking-tight mb-3">
         Lihat Seluruh Produk Kami
       </h2>
       <p class="text-sm text-emerald-950/70 mb-6">
@@ -180,7 +171,7 @@
         <span class="text-xs font-bold text-naturae-green tracking-widest uppercase bg-emerald-950/5 px-3 py-1 rounded-full">
           Edukasi Nutrisi
         </span>
-        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-naturae-darkgreen uppercase tracking-tight mt-3 mb-4">
+        <h2 class="font-header text-3xl sm:text-4xl md:text-5xl text-naturae-darkgreen uppercase tracking-tight mt-3 mb-4">
           Kenapa Memilih Cold Press?
         </h2>
         <p class="text-emerald-950/75 text-sm sm:text-base leading-relaxed">
@@ -192,32 +183,32 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
         <div class="bg-white rounded-3xl p-6 sm:p-7 border border-emerald-950/5 shadow-soft">
           <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-5">❄️</div>
-          <h3 class="font-display text-lg text-naturae-darkgreen mb-2">Teknologi Cold Pressed</h3>
+          <h3 class="font-subheader text-lg text-naturae-darkgreen mb-2">Teknologi Cold Pressed</h3>
           <p class="text-xs sm:text-sm text-emerald-950/75 leading-relaxed">Diekstrak menggunakan tekanan hidrolik perlahan tanpa pisau berputar yang menghasilkan panas perusak enzim.</p>
         </div>
 
         <div class="bg-white rounded-3xl p-6 sm:p-7 border border-emerald-950/5 shadow-soft">
           <div class="w-12 h-12 rounded-2xl bg-red-50 text-naturae-red flex items-center justify-center text-xl mb-5">💧</div>
-          <h3 class="font-display text-lg text-naturae-darkgreen mb-2">100% Sari Murni</h3>
+          <h3 class="font-subheader text-lg text-naturae-darkgreen mb-2">100% Sari Murni</h3>
           <p class="text-xs sm:text-sm text-emerald-950/75 leading-relaxed">Murni tanpa tambahan air, tanpa sirup pemanis, dan tanpa pewarna. Rasa manis murni dari buah matang pilihan.</p>
         </div>
 
         <div class="bg-white rounded-3xl p-6 sm:p-7 border border-emerald-950/5 shadow-soft">
           <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-naturae-green flex items-center justify-center text-xl mb-5">🛡️</div>
-          <h3 class="font-display text-lg text-naturae-darkgreen mb-2">Nutrisi & Enzim Utuh</h3>
+          <h3 class="font-subheader text-lg text-naturae-darkgreen mb-2">Nutrisi & Enzim Utuh</h3>
           <p class="text-xs sm:text-sm text-emerald-950/75 leading-relaxed">Kandungan vitamin A, C, K, folat, dan antioksidan alami terserap lebih optimal oleh tubuh tanpa oksidasi cepat.</p>
         </div>
 
         <div class="bg-white rounded-3xl p-6 sm:p-7 border border-emerald-950/5 shadow-soft">
           <div class="w-12 h-12 rounded-2xl bg-amber-50 text-naturae-orange flex items-center justify-center text-xl mb-5">⏱️</div>
-          <h3 class="font-display text-lg text-naturae-darkgreen mb-2">Segar Setiap Hari</h3>
+          <h3 class="font-subheader text-lg text-naturae-darkgreen mb-2">Segar Setiap Hari</h3>
           <p class="text-xs sm:text-sm text-emerald-950/75 leading-relaxed">Dibuat dalam batch segar harian untuk menjamin kualitas terbaik sampai ke tangan Anda.</p>
         </div>
       </div>
 
       <!-- Perbandingan Blender vs Cold Press -->
       <div class="bg-white rounded-3xl p-6 sm:p-8 border border-emerald-950/10 shadow-soft max-w-4xl mx-auto">
-        <h4 class="font-display text-xl text-naturae-darkgreen text-center mb-6">
+        <h4 class="font-subheader text-xl text-naturae-darkgreen text-center mb-6">
           Perbandingan Singkat: Jus Blender Biasa vs Naturae Cold-Pressed
         </h4>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -252,7 +243,7 @@
         <span class="text-xs font-bold text-naturae-red tracking-widest uppercase bg-red-100/60 px-3 py-1 rounded-full">
           Simpel & Cepat
         </span>
-        <h2 class="font-display text-3xl sm:text-4xl md:text-5xl text-naturae-darkgreen uppercase tracking-tight mt-3 mb-4">
+        <h2 class="font-header text-3xl sm:text-4xl md:text-5xl text-naturae-darkgreen uppercase tracking-tight mt-3 mb-4">
           Cara Pemesanan
         </h2>
         <p class="text-emerald-950/75 text-sm sm:text-base leading-relaxed">
@@ -262,23 +253,23 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="relative bg-white rounded-3xl p-8 border border-emerald-950/5 shadow-soft">
-          <span class="absolute top-4 right-6 font-display text-5xl font-black text-gray-100">01</span>
+          <span class="absolute top-4 right-6 font-header text-5xl font-black text-gray-100">01</span>
           <div class="w-14 h-14 rounded-2xl bg-red-50 text-naturae-red flex items-center justify-center text-2xl mb-6">🥤</div>
-          <h3 class="font-display text-xl text-naturae-darkgreen mb-3">Pilih Varian</h3>
+          <h3 class="font-subheader text-xl text-naturae-darkgreen mb-3">Pilih Varian</h3>
           <p class="text-xs sm:text-sm text-emerald-950/75 leading-relaxed">Pilih varian favoritmu dari katalog menu (Tropical Splash, Fresh Immunity, atau Green Vitality).</p>
         </div>
 
         <div class="relative bg-white rounded-3xl p-8 border border-emerald-950/5 shadow-soft">
-          <span class="absolute top-4 right-6 font-display text-5xl font-black text-gray-100">02</span>
+          <span class="absolute top-4 right-6 font-header text-5xl font-black text-gray-100">02</span>
           <div class="w-14 h-14 rounded-2xl bg-amber-50 text-naturae-orange flex items-center justify-center text-2xl mb-6">💬</div>
-          <h3 class="font-display text-xl text-naturae-darkgreen mb-3">Hubungi WhatsApp</h3>
+          <h3 class="font-subheader text-xl text-naturae-darkgreen mb-3">Hubungi WhatsApp</h3>
           <p class="text-xs sm:text-sm text-emerald-950/75 leading-relaxed">Klik tombol WhatsApp pada varian atau hubungi admin di +62 877-3072-0433 untuk mengirim pesanan.</p>
         </div>
 
         <div class="relative bg-white rounded-3xl p-8 border border-emerald-950/5 shadow-soft">
-          <span class="absolute top-4 right-6 font-display text-5xl font-black text-gray-100">03</span>
+          <span class="absolute top-4 right-6 font-header text-5xl font-black text-gray-100">03</span>
           <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-naturae-green flex items-center justify-center text-2xl mb-6">🛵</div>
-          <h3 class="font-display text-xl text-naturae-darkgreen mb-3">Pengiriman Segar</h3>
+          <h3 class="font-subheader text-xl text-naturae-darkgreen mb-3">Pengiriman Segar</h3>
           <p class="text-xs sm:text-sm text-emerald-950/75 leading-relaxed">Jus dingin segar segera diproses dan diantarkan langsung ke lokasi Anda di Surabaya & sekitarnya.</p>
         </div>
       </div>
@@ -295,7 +286,7 @@
           <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-100 text-pink-700 text-xs font-bold uppercase tracking-wider mb-3">
             Komunitas Naturae
           </span>
-          <h2 class="font-display text-3xl sm:text-4xl text-naturae-darkgreen uppercase tracking-tight">
+          <h2 class="font-header text-3xl sm:text-4xl text-naturae-darkgreen uppercase tracking-tight">
             Ikuti Keseruan Kami di Instagram
           </h2>
           <p class="text-emerald-950/70 text-sm mt-2">

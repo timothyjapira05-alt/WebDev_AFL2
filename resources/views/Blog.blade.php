@@ -9,7 +9,7 @@
         Tips & Jurnal Sehat
       </span>
 
-      <h1 class="font-display text-4xl sm:text-5xl text-naturae-darkgreen uppercase tracking-tight mb-4">
+      <h1 class="font-header text-4xl sm:text-5xl text-naturae-darkgreen uppercase tracking-tight mb-4">
         Inspirasi & Edukasi Nutrisi
       </h1>
 
@@ -45,7 +45,7 @@
                     {{ $post->category }}
                 </span>
 
-                <h3 class="font-display text-lg text-naturae-darkgreen mb-3">
+                <h3 class="font-subheader text-lg text-naturae-darkgreen mb-3">
                     {{ $post->title }}
                 </h3>
 
@@ -64,7 +64,7 @@
     @empty
 
         <div class="col-span-full text-center py-16">
-            <h3 class="text-xl font-display text-naturae-darkgreen mb-2">
+            <h3 class="text-xl font-subheader text-naturae-darkgreen mb-2">
                 Artikel Belum Tersedia
             </h3>
 

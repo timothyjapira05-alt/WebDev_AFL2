@@ -10,10 +10,10 @@
   <meta name="description" content="100% cold-pressed juice murni dari buah & sayur segar pilihan. Tanpa tambahan air, gula, atau pengawet. All item 20K.">
   <meta name="theme-color" content="#1E4324">
 
-  <!-- Google Fonts: Titan One (Chunky display), Syne, & Plus Jakarta Sans -->
+  <!-- Google Fonts: Urbanist (weights 400-900) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Syne:wght@700;800&family=Titan+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -25,22 +25,26 @@
             naturae: {
               bg: '#FAF6EE',
               cream: '#F3EDE2',
-              darkgreen: '#1E4324',
-              'darkgreen-dark': '#15331B',
-              'darkgreen-light': '#2A5C32',
-              red: '#D93829',
+              darkgreen: '#18552C',
+              'darkgreen-dark': '#123F21',
+              'darkgreen-light': '#236E3B',
+              red: '#D62827',
               'red-light': '#FFF1EF',
-              orange: '#ED7D18',
+              orange: '#F26122',
               'orange-light': '#FFF5EB',
-              green: '#2F7E2B',
+              green: '#9ABD3B',
               'green-light': '#F0F9EE',
-              yellow: '#F5A623',
-              dark: '#1C2818',
+              yellow: '#FFCA26',
+              dark: '#18552C',
             }
           },
           fontFamily: {
-            display: ['"Titan One"', '"Syne"', 'sans-serif'],
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            header: ['"Keep on Truckin"', 'cursive', 'sans-serif'],
+            display: ['"Keep on Truckin"', 'cursive', 'sans-serif'],
+            subheader: ['"Zero Cool"', 'sans-serif'],
+            subheading: ['"Zero Cool"', 'sans-serif'],
+            sans: ['"Urbanist"', 'sans-serif'],
+            body: ['"Urbanist"', 'sans-serif'],
           },
           boxShadow: {
             'soft': '0 10px 30px -5px rgba(30, 67, 36, 0.08)',
@@ -71,8 +75,8 @@
     }
   </script>
 
-  <!-- External CSS from public/css/style.css -->
-  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  <!-- External CSS from public/css/style.css with Cache-Buster -->
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}?v={{ file_exists(public_path('css/style.css')) ? filemtime(public_path('css/style.css')) : time() }}">
 </head>
 <body class="font-sans antialiased selection:bg-naturae-red selection:text-white min-h-screen flex flex-col justify-between">
 
@@ -83,15 +87,12 @@
         
         <!-- Logo & Brand -->
         <a href="{{ url('/') }}" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-full bg-naturae-red text-white flex flex-col items-center justify-center font-display text-[9px] leading-none shadow-md group-hover:scale-105 transition-transform select-none">
-            <span>natu</span>
-            <span class="-mt-0.5">rae</span>
-          </div>
+          <img src="{{ asset('assets/naturae-logo.webp') }}?v={{ file_exists(public_path('assets/naturae-logo.webp')) ? filemtime(public_path('assets/naturae-logo.webp')) : time() }}" alt="Naturae Logo" class="w-10 h-10 object-contain shadow-xs group-hover:scale-105 transition-transform select-none">
           <div class="flex flex-col">
-            <span class="font-display text-2xl tracking-tight text-naturae-darkgreen group-hover:text-naturae-red transition-colors">
+            <span class="font-header text-2xl tracking-normal text-naturae-darkgreen group-hover:text-naturae-red transition-colors leading-none">
               naturae
             </span>
-            <span class="text-[10px] tracking-widest text-emerald-800 uppercase font-semibold -mt-1">
+            <span class="text-[10px] tracking-widest text-emerald-800 uppercase font-bold mt-1">
               Cold Press Juice
             </span>
           </div>
@@ -99,24 +100,24 @@
 
         <!-- Desktop Navigation Links (Consistent on ALL pages) -->
         <nav class="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-6" aria-label="Menu Navigasi">
-          <a href="{{ route('products') }}" class="text-sm font-semibold {{ Request::is('products') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
+          <a href="{{ route('products') }}" class="text-lg font-semibold {{ Request::is('products') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
             Products
           </a>
-          <a href="{{ url('/about_us') }}" class="text-sm font-semibold {{ Request::is('about_us') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
-            About Us
-          </a>
-          <a href="{{ url('/Story') }}" class="text-sm font-semibold {{ Request::is('Story') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
-            Our Story
-          </a>
-          <a href="{{ url('/Blog') }}" class="text-sm font-semibold {{ Request::is('Blog') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
+          <a href="{{ url('/Blog') }}" class="text-lg font-semibold {{ Request::is('Blog') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
             Blog
           </a>
-          <a href="{{ url('/GetInTouch') }}" class="text-sm font-semibold {{ Request::is('GetInTouch') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
+          <a href="{{ url('/Story') }}" class="text-lg font-semibold {{ Request::is('Story') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
+            Our Story
+          </a>
+          <a href="{{ url('/about_us') }}" class="text-lg font-semibold {{ Request::is('about_us') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
+            About Us
+          </a>
+          <a href="{{ url('/GetInTouch') }}" class="text-lg font-semibold {{ Request::is('GetInTouch') ? 'text-naturae-red font-bold' : 'text-emerald-950/80 hover:text-naturae-red' }} transition-colors">
             Get In Touch
           </a>
         </nav>
 
-        <!-- Mobile Toggle -->
+        <!-- Hamburger Menu -->
         <div class="flex items-center gap-3">
           <button onclick="toggleMobileNav()" class="lg:hidden p-2 rounded-lg text-emerald-950 hover:bg-emerald-950/5">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,13 +128,12 @@
 
       </div>
 
-      <!-- Mobile Menu Dropdown -->
+      <!-- Hamburg Dropdown -->
       <div id="mobile-nav-menu" class="hidden lg:hidden pt-4 pb-2 border-t border-emerald-950/10 mt-3 space-y-2">
-        <a href="{{ url('/') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Beranda</a>
         <a href="{{ route('products') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Products</a>
-        <a href="{{ url('/about_us') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">About Us</a>
-        <a href="{{ url('/Story') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Our Story</a>
         <a href="{{ url('/Blog') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Blog</a>
+        <a href="{{ url('/Story') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Our Story</a>
+        <a href="{{ url('/about_us') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">About Us</a>
         <a href="{{ url('/GetInTouch') }}" class="block px-3 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-950/5 rounded-lg">Get In Touch</a>
       </div>
     </div>
@@ -157,20 +157,15 @@
         
         <div class="md:col-span-5 space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-naturae-red text-white flex flex-col items-center justify-center font-display text-[9px] leading-none shadow">
-              <span>natu</span><span class="-mt-0.5">rae</span>
-            </div>
+            <img src="{{ asset('assets/naturae-logo.webp') }}?v={{ file_exists(public_path('assets/naturae-logo.webp')) ? filemtime(public_path('assets/naturae-logo.webp')) : time() }}" alt="Naturae Logo" class="w-10 h-10 object-contain shadow select-none">
             <div>
-              <span class="font-display text-2xl tracking-tight text-white block">naturae</span>
-              <span class="text-[10px] tracking-widest text-emerald-300 uppercase font-bold">Cold Press Juice</span>
+              <span class="font-header text-2xl tracking-normal text-white block leading-none">Naturae</span>
+              <span class="text-[10px] tracking-widest text-emerald-300 uppercase font-bold mt-1 block">Cold Press Juice</span>
             </div>
           </div>
           <p class="text-xs sm:text-sm text-emerald-200/80 leading-relaxed max-w-sm">
             Freshly Pressed, Simply Enjoyed. 100% cold-pressed juice buah & sayur murni tanpa pemanasan, tanpa air tambahan, dan tanpa pengawet.
-          </p>
-          <div class="inline-block px-3 py-1 rounded-full bg-emerald-900/60 border border-emerald-700/40 text-xs font-semibold text-emerald-300">
-            ALL ITEM 20K · 300 ml
-          </div>
+          </p> 
         </div>
 
         <div class="md:col-span-3 space-y-3">
